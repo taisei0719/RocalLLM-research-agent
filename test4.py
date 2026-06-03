@@ -2,7 +2,7 @@ import requests
 import base64
 
 # 画像を読み込んでbase64にエンコード
-with open("/home/nagata/ensyuu/image.png", "rb") as f:
+with open("/home/nagata/ensyuu/RocalLLM-research-agent/image.png", "rb") as f:
     image_b64 = base64.b64encode(f.read()).decode("utf-8")
 
 response = requests.post("http://localhost:11434/api/generate", json={
